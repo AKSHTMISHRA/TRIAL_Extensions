@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Extension</title>
+    <title>ATS Resume Scorer with AI</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, Chrome Extension!</h1>
-    <button id="myButton">Click Me</button>
+    <h1>ATS Resume Scorer with AI</h1>
+    <form id="resume-form">
+        <!-- Input for Resume File -->
+        <label for="resumeFile">Upload Resume:</label><br>
+        <input type="file" id="resumeFile" accept=".pdf,.doc,.docx,.txt"><br><br>
+        
+        <!-- Input for Job Description -->
+        <label for="jobDescription">Enter Job Description:</label><br>
+        <textarea id="jobDescription" rows="5" cols="30" placeholder="Paste job description here"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="button" id="submitBtn">Score Resume</button>
+    </form>
+
+    <!-- Display Score -->
+    <div id="result"></div>
 
     <script src="popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

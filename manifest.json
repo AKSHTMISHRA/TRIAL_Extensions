@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "My First Chrome Extension",
+    "name": "ATS Resume Scorer with AI",
     "version": "1.0",
-    "description": "A simple Chrome extension to demonstrate basic functionality.",
+    "description": "A Chrome extension that scores a resume for a job description using AI (ChatGPT).",
     "permissions": [
       "activeTab"
     ],
